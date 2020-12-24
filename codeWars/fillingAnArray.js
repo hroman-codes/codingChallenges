@@ -2,7 +2,7 @@
 /**
  * @description write a function that produces an array with the numbers 0 to N-1 in it
  * @description Kata: https://www.codewars.com/kata/571d42206414b103dc0006a1/train/javascript
- * @param {number} 
+ * @param {number} - a single whole integer
  * @returns {array} with N amount of numbersfrom param >>>>>>> N
  */
 
