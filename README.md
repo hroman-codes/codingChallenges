@@ -15,5 +15,19 @@
     - [T]est
     - [O]ptimization
 
+## Complexity
+#### ⏲️ ```Time``` ⏲️
+- Operations
+- Comparisons
+- Loop stuff
+- Pointer references
+- Function calls to outside
+
+#### 🚀 ```Space``` 🚀
+- Variables
+- Data Structures
+- Allocations
+- Function call
+
 ## Tech
 - Javascript
