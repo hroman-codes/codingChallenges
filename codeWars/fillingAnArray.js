@@ -32,9 +32,29 @@
 //     [] for every number we pass push to the empty array 
 //     [] return array store
 
-// [T]
-// [O]
+// [T]est
+    // console.log(arr(5))
 
+// [O]ptimization
+    // What is the big O for the current solution?
+    //     Time Complexity:   N is a static # 
+    //                        with one loop intact that loop upto the #
+
+    //                    >>> Big O (N) Linear Time
+
+
+    //     Space Complexity:  Input Size + Auxillary Space
+        
+    //                        This has one function call 
+    //                        One variable that stores in array 
+
+    //                        arrStore[]   = N x 4bytes
+    //                        i            = 4bytes
+    //                        Aux(func)    = 4bytes
+    //                        Aux(return)  = 4bytes
+    //                        Total        = 4N + 12bytes 
+
+    //                    >>> Big O (N) Linear Space complexity
 
 const arr = N => {
     console.log('this is N >>>', N);
