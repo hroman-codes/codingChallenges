@@ -16,18 +16,16 @@
     - [O]ptimization
 
 ## Complexity
-#### ⏲️ ```Time``` ⏲️
+#### ⏲️ ```Time``` ⏲️ (FOCLP)
 - Operations
 - Comparisons
 - Loop stuff
 - Pointer references
 - Function calls to outside
 
-#### 🚀 ```Space``` 🚀
-- Variables
-- Data Structures
-- Allocations
-- Function call
+#### 🚀 ```Space``` 🚀 (FAVD)
+- Auxillary Space
+- Input Size
 
 ## Tech
 - Javascript
