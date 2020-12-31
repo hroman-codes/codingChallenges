@@ -38,14 +38,45 @@
 
 // [O]ptimization
 
-    ⏲️ Time Complexity (FOCLP): operations + comparisons + loops + pointer reference + function call to outside 
+//     ⏲️ Time Complexity (FOCLP): operations + comparisons + loops + pointer reference + function call to outside 
 
-        A 
-        n B forloop
-        
+//        A monthsOfTheYear (pointer reference)         
+//       nB forLoop                                                                
+//       nC let prop                                  
+//      n2D for loop                                  
+//      n2E Months pointer reference ?                
+//      n2F if comparison statement                   
+                                                   
+//     List Out:       A + n(B+C) + n2(D+E+F)                                     
+//     Group:          K1 +  K2   +   K3
+//     Group:          K1 + n(K2) + n2(K3)            
+//     Drop Constant:      K1 + n2
+//     Drop Constant:        n2
+//     Time Complexity:     ⏲️ O(n)2 Quadratic Time Complexity
+// å
 
-    // 🛰 Space Complexity (FAVD): variables + data structures + allocations + function call 
-                        
+//     🛰 Space Complexity (FAVD): function call + allocations + variables + data structures
+
+//     A quarterOf         function Call
+//     B month             variable
+//     C monthsOfTheYear   data structure
+//    nD months            variable
+
+//     List Out:  A + B + C + N(D)
+//     Group:         K1   +  K2
+//     Group:         K1  + n(K2)
+//     Drop Const:     K1 +  n
+//     Drop Const:        n 
+//     Space Complexity: 🛰 O(n)   
+
+//     🛰 Space Complexity: Input Size + Auxillary Space
+
+//     A quarterOf         Auxillary Space
+//     B month             Input Size
+//     C monthsOfTheYear   Auxillary Space
+//    nD months            variable
+
+
 
 const quarterOf = (month) => {
     
