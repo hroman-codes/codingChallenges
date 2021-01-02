@@ -27,12 +27,12 @@
 
 // [C]ode 
 
-    //TODO: figure out the type of data structure I am going to use
-    //TODO: build out the DS
-    //TODO: run a test on the first Data Structure by accessing the data I want on both test DS
-    //TODO: look through the monthsOfTheYear keys loop
-    //TODO: then a second loop to look through those to see if 6 is included
-    //TODO: if its its included return the key 
+    // figure out the type of data structure I am going to use
+    // build out the DS
+    // run a test on the first Data Structure by accessing the data I want on both test DS
+    // look through the monthsOfTheYear keys loop
+    // then a second loop to look through those to see if 6 is included
+    // if its its included return the key 
 
 // [T]est quarterOf(12)
 
