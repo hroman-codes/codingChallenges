@@ -1,7 +1,8 @@
 // [R]epeat
 /**
- * @function quarterOf 
+ * @tutorial https://www.codewars.com/kata/56dec885c54a926dcd001095/train/javascript
  * @description given a month as an integer from 1 to 12 return to which quarter of the year it belongs as an integer number
+ * @function quarterOf 
  * @param {integer} month - a number from 1 to 12
  * @returns {integer} - a number representing the quarter the month sits
  */
