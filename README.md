@@ -24,7 +24,7 @@
 - Function calls to outside
 
 #### 🚀 ```Space``` 🚀 (FAVD)
-- Auxillary Space
+- Auxiliary Space
 - Input Size
 
 ## Tech
