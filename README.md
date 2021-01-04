@@ -23,9 +23,10 @@
 - Pointer references
 - Function calls to outside
 
-#### 🚀 ```Space``` 🚀 (FAVD)
+#### 🚀 ```Space``` 🚀 
 - Auxiliary Space
 - Input Size
+- Variables
 
 ## Tech
 - Javascript
