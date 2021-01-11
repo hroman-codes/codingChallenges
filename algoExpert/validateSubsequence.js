@@ -1,4 +1,4 @@
-// [R]epeat 
+[R]epeat 
 /**
  * @tutorial https://www.algoexpert.io/questions/Validate%20Subsequence
  * @description Given tow non-empty arrays of integers, write a function that determines the second array is a subsequence of the first one
@@ -8,53 +8,53 @@
  * @returns {boolean} - if there is a sequence 
  */
 
-// [E]xample
+[E]xample
 
-// array = [5, 1, 22, 25, 6, -1, 8, 10]
-// sequence = [1, 6, -1, 10] // return true 
+array = [5, 1, 22, 25, 6, -1, 8, 10]
+sequence = [1, 6, -1, 10] // return true 
 
-// iteration >>>>>> ❌ ✅  ❌  ❌  ✅  ✅  ❌  ✅
-//                 [5, 1, 22, 25, 6, -1, 8, 10]
+iteration >>>>>> ❌ ✅  ❌  ❌  ✅  ✅  ❌  ✅
+                [5, 1, 22, 25, 6, -1, 8, 10]
 
-//                       [1, 6, -1, 10] <<< a subsequence is a set of numbers that arent necessarily adjacent in the array but that 
-//                                          are in the same order as they appear in the array.  
+                      [1, 6, -1, 10] <<< a subsequence is a set of numbers that arent necessarily adjacent in the array but that 
+                                         are in the same order as they appear in the array.  
 
-// so how to I determain the order? 
-// is it already done for me based on the data structure itself. 
-// Which data structure do I use to help me?
-// [] <<<< do I need a 3rd DS to keep track?
-// Which Algo can I use to help? 
+so how to I determain the order? 
+is it already done for me based on the data structure itself. 
+Which data structure do I use to help me?
+[] <<<< do I need a 3rd DS to keep track?
+Which Algo can I use to help? 
 
-//     total = 4
+    total = 4
 
-//                             [1, 6, -1, 10] << length is 4 Sequence
-//     set up the 1st pointer              ^
+                            [1, 6, -1, 10] << length is 4 Sequence
+    set up the 1st pointer              ^
 
 
-//                             [5, 1, 22, 25, 6, -1, 8, 10] << array 
-//     loop through arr                                  ^
+                            [5, 1, 22, 25, 6, -1, 8, 10] << array 
+    loop through arr                                  ^
     
-//     is first pointer === second pointer? 
+    is first pointer === second pointer? 
 
-//     Total ++ 
+    Total ++ 
 
-//     seq++
+    seq++
 
 
-//     is the length of sequence === total 
+    is the length of sequence === total 
 
-//     return boolean value
+    return boolean value
 
-// [C]ode 
+[C]ode 
 
-    // create a counter variable 
-    // set up first pointer loop on sequence array 
-    // set up second pointer loop on array
-    // if the pointer1 is equal to pointer2 
-            // increase the counter variable 
-            // break the inner loop for efficiency 
-    //TODO: once we end both loops
-            // is the array length of sequence equal to the counter 
+    create a counter variable 
+    set up first pointer loop on sequence array 
+    set up second pointer loop on array
+    if the pointer1 is equal to pointer2 
+            increase the counter variable 
+            break the inner loop for efficiency 
+    once we end both loops
+            is the array length of sequence equal to the counter 
             // return boolean value
             
 // Solution #1 has Bugs 🦟 🦟 🦟 🦟 🦟 🦟 🦟 🦟 🦟 🦟 🦟 🦟 🦟
