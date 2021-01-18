@@ -55,6 +55,7 @@
 function toCsvText(array) {
   let finalString = '';
 
+  // debugger
   for (let i = 0; i < array.length; i++) {
     let arrayEl = array[i];
 
