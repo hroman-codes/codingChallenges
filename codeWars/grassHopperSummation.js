@@ -18,10 +18,10 @@
 
 // [C]ode
 
-    //TODO: create a variable Total to hold the total # 
-    //TODO: loop through the Nth starting at #1 
-    //TODO: on every interation append the number to the variable
-    //TODO: return the total
+    // create a variable Total to hold the total # 
+    // loop through the Nth starting at #1 
+    // on every interation append the number to the variable
+    // return the total
 
 // [T]est - summation(8) should return 36
  

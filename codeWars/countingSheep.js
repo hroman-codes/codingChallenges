@@ -18,10 +18,10 @@
 
 // [C]ode 
 
-    //TODO: grab the array and store it in a variable for immutability purposes [STATE]
-    //TODO: filter out the array and find all true boolean values 
-    //TODO: filter method returns a new array with the filtered results, check the length
-    //TODO: return the length of the filtered array. 
+    // grab the array and store it in a variable for immutability purposes [STATE]
+    // filter out the array and find all true boolean values 
+    // filter method returns a new array with the filtered results, check the length
+    // return the length of the filtered array. 
 
 function countSheeps(arrayOfSheep) {
     const sheepState = arrayOfSheep;

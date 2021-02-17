@@ -26,8 +26,8 @@
 
 // [Code]
 
-    //TODO: grab the inputs and store them in the right order of operation
-    //TODO: use the eval function and return it
+    // grab the inputs and store them in the right order of operation
+    // use the eval function and return it
 
 
 function basicOp(operation, value1, value2) {

@@ -16,8 +16,8 @@
 
 // [C]ode 
 
-    //TODO: find a regex that is able to match the string and remove spaces
-    //TODO: return the condenced string 
+    // find a regex that is able to match the string and remove spaces
+    // return the condenced string 
 
 // [Test] 
 
