@@ -42,54 +42,54 @@
 
 // [C]ode
 
-//TODO: create a variable that hold a pointer to the winning team indicator of 1
+// create a variable that hold a pointer to the winning team indicator of 1
 let HOME_TEAM_WON = 1
 
 function tournamentWinner(competitions, results) {
-    //TODO: create a variable to hold the current best team, value should be a string
+    // create a variable to hold the current best team, value should be a string
     let currentBestTeam = '';
 
-    //TODO: create a variable that holds the scores of the currentbestTeam
+    // create a variable that holds the scores of the currentbestTeam
             // Key should hold the currentBestTeam
             // Value should hold the score
     let scores = {[currentBestTeam]: 0}
 
-    //TODO: loop the the competitors
+    // loop the the competitors
     for (let idx = 0; idx < competitions.length; idx++) {
-        //TODO: create a variable result that stores a reference to the results array 
+        // create a variable result that stores a reference to the results array 
              // and iterates with the help of the loops index
         const result = results[idx]
         console.log('result >>>', result);
 
-        //TODO: create a variable that deconstructs the reference to the [homeTeam, awayTeam] 
+        // create a variable that deconstructs the reference to the [homeTeam, awayTeam] 
              // and stores competitions[idx]
         const [homeTeam, awayTeam] = competitions[idx]
         console.log([homeTeam, awayTeam]);
 
-        //TODO: create a variable that holds the winning team for that competition, 
+        // create a variable that holds the winning team for that competition, 
              // the value should hold a tenary
         const winningTeam = result === HOME_TEAM_WON ? homeTeam : awayTeam
 
-        //TODO: call the updateScore function with the (winningTeam, points, scores)
+        // call the updateScore function with the (winningTeam, points, scores)
         updateScore(winningTeam, 3, scores);
 
-        //TODO: if scores winningTeam is greater than the scores currentBestTeam
+        // if scores winningTeam is greater than the scores currentBestTeam
         if (scores[winningTeam] > scores[currentBestTeam]) {
-            //TODO: set currentBestTeam = winningTeam
+            // set currentBestTeam = winningTeam
             currentBestTeam = winningTeam
         }
     } 
-        //TODO: return currentBestTeam
+        // return currentBestTeam
         return currentBestTeam;
     
     }
     
-    //TODO: create an updateScore function and pass in (teams, points, scores)
+    // create an updateScore function and pass in (teams, points, scores)
     function updateScores(team, points, scores) {
-        //TODO: if (!(team in scores)) scores[team] = 0
+        // if (!(team in scores)) scores[team] = 0
         if (!(team in scores)) scores[team] = 0
 
-        //TODO: update the points scores[team] += points
+        // update the points scores[team] += points
         scores[team] += points       
     }
 

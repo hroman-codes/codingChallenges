@@ -28,12 +28,12 @@
 
 // [C]ode 
 
-    //TODO: create an array and store the days of the week
-    //TODO: find the day of the week for S 
-    //TODO: Store the index of the day in a variable 
-    //TODO: Loop through but start the loop from the index we found
-    //TODO: End the loop at K times 
-    //TODO: Return the day 
+    // create an array and store the days of the week
+    // find the day of the week for S 
+    // Store the index of the day in a variable 
+    // Loop through but start the loop from the index we found
+    // End the loop at K times 
+    // Return the day 
 
 // function solutions(S, K) {
 //     let daysOfTheWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
