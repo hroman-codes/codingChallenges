@@ -15,10 +15,10 @@
 
 // [C]ode 
 
- //TODO: creat variable that holds an empty array
- //TODO: loop up to n
-    //TODO: while looping push n to the stack
-//TODO: return the stack once loops end
+ // creat variable that holds an empty array
+ // loop up to n
+    // while looping push n to the stack
+// return the stack once loops end
 
 function monkeyCount(n) {
     let stack = [];
