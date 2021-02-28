@@ -22,7 +22,7 @@
 
 // >>> Code
     // create a variable that stores returns the index of the greates value in the array
-    //TODO return the string with index reference pointing to the teams array
+    // return the string with index reference pointing to the teams array
 
 function uefaEuro2016(teams, scores) {
     let greatestValueInArray = scores.indexOf(Math.max(...scores))

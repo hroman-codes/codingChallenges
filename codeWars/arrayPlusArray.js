@@ -26,9 +26,9 @@
 
 // [C]ode: 
 
-    //TODO: create two reduce functions one for each array
-    //TODO: sum up both totals 
-    //TODO: return the total
+    // create two reduce functions one for each array
+    // sum up both totals 
+    // return the total
 
 function arrayPlusArray(arr1, arr2) {
     let total = 0;
