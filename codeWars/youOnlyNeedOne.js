@@ -20,4 +20,4 @@ check([66, 101], 66)
 check(['what', 'a', 'great', 'kata'], 'kat')
 
 // >>> Optimization
-// ⏲️ Time complexity of solution 1 is O(n) Linear time
+// ⏲️ Time complexity of solution 1 is O(n) Linear time where the .includes loop though the aray once 
