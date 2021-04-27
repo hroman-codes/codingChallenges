@@ -76,6 +76,25 @@
 // }
 // }
 
+
+// if (currentChar === "A" || currentChar === "E"|| currentChar === "I" || currentChar === "O" || currentChar === "U") {
+//   newStr.splice(i, 1)
+//   // newStr.slice(i);
+// }
+
+// if(currentChar === "a" || currentChar === "e"|| currentChar === "i" || currentChar === "o" || currentChar === "u"){
+//   // Since the o and the u are next to each other when we slice the the o the array element that o sat in is replaced 
+//   // nd moved over which the u sits in. So It doesnt captute it. 
+//   newStr.splice(i, 1)
+// }
+
+// [Y,u,r]
+//  0 1 2
+
+// "No offense but,\nYour writing is among the worst I've ever read"
+
+// splice(start, deleteCount, item1, item2, itemN)  <<<<<<<<
+
 // solution 1 
 function disemvowel(str) {
    let newStr = str.split("")
