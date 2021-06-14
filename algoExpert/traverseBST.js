@@ -163,4 +163,31 @@ class BinarySearchTree {
         }
     }
 
+    /**
+     * @function getRootNode
+     * @description returns the root node of a tree
+     */
+    getRootNode() {
+        return this.root;
+    }
+
+    /**
+     * @function search 
+     * @description searches the node with a value data in the entire tree
+     */
+    search(node, data) {
+        // if the tree is empty return null
+        // else if the data is less than node's data move to the left
+        // else if the data is more than the node's data move to the right
+        // finally if the data is equal to the node data return the node itself
+        if (node === null) {
+            return null
+        } else if (data < node.data) {
+            return this.search(node.left, data)
+        } else if (data > node.data) {
+            return this.search(node.right, data)
+        } else {
+            return node
+        }
+    }
 }
