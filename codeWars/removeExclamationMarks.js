@@ -33,27 +33,27 @@
 //     >>> "Hello World" 
 
 // 1st solution
-// function removeExclamationMarks(s) {
-//     let resultString = [];
+function removeExclamationMarks(s) {
+    let resultString = [];
 
-//     for (let i = 0; i < s.length; i++) {
-//         let currentEl = s[i]
-//         console.log(currentEl)
+    for (let i = 0; i < s.length; i++) {
+        let currentEl = s[i]
+        console.log(currentEl)
 
-//         if (currentEl === '!') {
-//             continue
-//         } else {
-//             resultString.push(currentEl)
-//         }
-//     }
+        if (currentEl === '!') {
+            continue
+        } else {
+            resultString.push(currentEl)
+        }
+    }
 
-//     console.log(resultString.join(' '))
-//     console.log(resultString)
+    console.log(resultString.join(' '))
+    console.log(resultString)
 
-//     return resultString.join('')
-// }
+    return resultString.join('')
+}
 
-// console.log(removeExclamationMarks("Hello World!"))
+console.log(removeExclamationMarks("Hello World!"))
 
 // FOCL = Function call to outside + Operations + Comparisons + Loops
 
@@ -82,8 +82,8 @@
 
 // Regex solution & Split Join solution 
 function removeExclamationMarks(s){
-    // return s.replace(/!/gi, '');
-    // return s.split('!').join('');
+    return s.replace(/!/gi, '');
+    return s.split('!').join('');
 }
 
 
