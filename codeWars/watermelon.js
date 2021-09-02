@@ -28,14 +28,15 @@ Process
         - check for floats as an indicator of some sort 
 
     w2 / 2 = 1 <> 2 > 2
-        F          F
+        F    &&    F
+              F
 
     w3 / 2 = 1.5 <> 3 > 2
-        F           T 
+        F     &&     T 
               F 
     
     w4 / 2 = 2 <> 4 > 2
-       T            T
+       T     &&     T
             T
 
 function divide(weight) {
