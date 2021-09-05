@@ -14,11 +14,11 @@ Input
 
     >>> 2 1 2 // should be 6
 
-    What do we know about the amount of params? 
+    What do we know about the number of params? 
 
-        - we have a consistant set of 3 params 🤔
+        - we have a consistent set of 3 params 🤔
     
-    What do we know about some of the restrictions 
+    What do we know about some of the restrictions? 
 
         - we can only use a combination of 3 operators +, *, () 🤔
     
