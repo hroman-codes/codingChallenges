@@ -42,4 +42,4 @@ console.log(minimumWaitingTime([5,1,4]))
 
 🛰 Space Complexity = Constant O(1) n being the queries array
 
-    Since we can sort in queries in place without usuing any additional space leaves us with Constant O(1) 
+    Since we can sort in queries in place without using any additional space leaves us with Constant O(1) 
