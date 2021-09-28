@@ -28,53 +28,61 @@
 
 //     >> where do I inject logic to compare? 
 
-//     >>> ["a", "a", "b", "b"] Answer Key 
-            
-//     >>> ["a", "c", "b", "d"] Student Answers
-//           ^
+    // >>> ["a", "a", "b", "b"] Answer Key
+    //       0    1    2    3 
+    //                 ^     
+    // >>> ["a", "c", "b", "d"] Student Answers
+    //       0    1    2    3
+    //                      ^
 
 // Process
-    // create a helper function to handle to comparing 
 
-    // - create variables above 
-    // - run firstLoop 
-    //     - grab currentElement
-    //         - if currentElement is empty give 0 points 
-    //         - if currentElement === answerOne || 
-    //              currentElement === answerTwo || 
-    //              currentElement === answerThree || 
-    //              currentElement === answerFour
-    //             >>> + 4 points
-    //           else 
-    //             >>> -1 points
-    // return answer
+//     - run 1st loop 
+//         - grab currentElFirstLoop 
+//         - run second loop
+//             - grab currentElSecondLoop
+//             - if the currentIndex of the first loop is the same as the currentIndex of the second loop 
+//                 - if currentElFirstLoop is the same as currentElSecondLoop
+//                     increase total by 4 points
+//                 - else 
+//                     decrease toal by - 1 point 
+//             else 
+//                 continue
+//     - return total
 
 function checkExam(array1, array2) {
     let total = 0;
-    let = answerOne = array1[0]
-    let = answerTwo = array1[1]
-    let = answerThree = array1[2]
-    let = answerFour = array1[3]
-    console.log(answerOne, answerTwo, answerThree, answerFour)
 
-    for (const currentElement of array1) {
-        console.log(currentElement)
+    for (let i = 0; i < array1.length; i++) {
+        let currentElFirstLoop = array1[i];
 
-        // if (currentElement === '') total = 0
-        if (currentElement === answerOne ||
-            currentElement === answerTwo ||
-            currentElement === answerThree ||
-            currentElement === answerFour) {
-                total += 4
+        for (let j = 0; j < array2.length; j++) {
+            let currentElSecondLoop = array2[j];
+
+            if (i === j) {
+                if (currentElFirstLoop === currentElSecondLoop) {
+                    total += 4 
+                } else if (currentElSecondLoop === '') {
+                    total += 0
+                } else {
+                    total--
+                }
             } else {
-                total +- 1
+                continue
             }
+
+        }
     }
 
-    return total
+    return (total < 0) ? total = 0 : total
 }
 
 // Test
-console.log(checkExam(["a", "a", "b", "b"], ["a", "c", "b", "d"])) // 6
+// console.log(checkExam(["a", "a", "b", "b"], ["a", "c", "b", "d"])) // 6
+// console.log(checkExam(["a", "a", "c", "b"], ["a", "a", "b",  ""])) // 7
+console.log(checkExam(["b", "c", "b", "a"], ["",  "a", "a", "c"])) // 0
 
 // Complexity
+⏲️ Time Complexity = quadratic O(n2) due to the nested loops 
+🛰 Space Complexity = Linear O(n) due to line 57 and 60 where array1 and array2 grows in a linear format, my best educated guess 🤔 
+
