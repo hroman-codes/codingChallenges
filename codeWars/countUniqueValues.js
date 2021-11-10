@@ -10,8 +10,6 @@
 // Input 
 
     // >> [1, 1, 1, 1, 1, 2] // 2
- 
-
 
 // Process
 function countUniqueValues(arr) {
@@ -44,7 +42,6 @@ function countUniqueValues(arr) {
 
     console.log('start >>', start);
     console.log('arr >>', arr)
-    console.log('start', start)
 
     return start
 }
@@ -56,4 +53,3 @@ console.log(countUniqueValues([1, 1, 1, 3, 4, 4])) // 3
 // Complexity
 ⏲️ Time O(n) linear 
 🛰 Space O(1) constant space 
-
