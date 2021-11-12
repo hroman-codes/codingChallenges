@@ -9,11 +9,44 @@
  * @param {Function} func
  * @returns {Number}
  */
+ 
+// Example 
 
-// Input 
+    // - findElement([1, 2, 3, 4], num => num % 2 === 0)
 
-// Process 
+    //      N  Y  
+    //     [1, 2, 3, 4]
+    //         ^
 
-// Output
+    // - we are testing if the number is even based on the func 
+    // - We would need to iterate through the list of numbers
+    // - call the function and apply the num  
+    // - loop through the list of numbers 
+    // - stoe each number an a variable 
+    // - call the function and apply the number 
+    // - if true 
+    //     - return the number 
+    // - else 
+    //     - keep looping and if no number is even return undefined
+            
+// Approach 
+
+    // - this will be an iterative approach 
+
+// Code 
+function findElement(arr, func) {
+    for (const num in arr) {
+        let isEven = func(arr[num]);
+
+        if (isEven) return arr[num]
+    }
+
+    return undefined
+}
+
+// Test
+console.log(findElement([1, 2, 3, 4], num => num % 2 === 0))
 
 // Complexity
+⏲️ O(n) Linear 
+🛰 O(1) constant time  
