@@ -41,3 +41,5 @@ function maxSubarraySum(arr, num) {
 console.log(maxSubarraySum([1, 2, 4, 8, 1], 2))
                                         
 // Complexity 
+⏲ Time O(n) linear time
+Space O(1) constant time 
