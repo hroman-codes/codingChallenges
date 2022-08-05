@@ -5,7 +5,7 @@
 //                🚫       🚫
 //  START   green < yellow < red  END
 
-// 2️⃣ APPROACH:  finite state machine model
+// 2️⃣ APPROACH: finite state machine model
 
 // Current State | Next State
 // __________________________
@@ -13,24 +13,36 @@
 // Yellow   | Red 
 // Red      | Green
 
-// Represent the state machine in an obejct 
-// trafficLightStateMachine = {
-//     'green': 'yellow',
-//     'yellow': 'red',
-//     'red': 'green' 
-// }
-
 // 3️⃣ IMPLEMENTATION
 function updateLight(current) {
-    trafficLightStateMachine = {
-        'green': 'yellow',
-        'yellow': 'red',
-        'red': 'green' 
+
+    if (current === '') return ("We have a problem")
+
+    const trafficLightStateMachine = {
+        currentState: 'red',
+        state: {
+            'green': { 
+                _transition: function() {
+                    trafficLightStateMachine.currentState = 'yellow'
+                }
+            },
+            'yellow': {
+                _transition: function() {
+                    trafficLightStateMachine.currentState = 'red'
+                }
+            },
+            'red': {
+                _transition: function() {
+                    trafficLightStateMachine.currentState = 'green'
+                }
+            }
+
+        }
     }
 
-    if (current === '') console.log("We have a problem")
+    trafficLightStateMachine.state[current]._transition()
 
-    return trafficLightStateMachine[current]
+    return trafficLightStateMachine.currentState
 }
 
 // 4️⃣ TEST 
