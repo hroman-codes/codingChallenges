@@ -1,3 +1,5 @@
+// https://www.codewars.com/kata/58649884a1659ed6cb000072/solutions/javascript
+
 // 1️⃣ EXAMPLE: 
 //                ✔        ✔     ✔ 
 //  START   green > yellow > red > 🔃  END
