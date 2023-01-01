@@ -39,7 +39,7 @@ function sliding(nums, k) {
     let arr = []
     let tempArr = []
     // account for an array smaller than the window
-    if (nums.length < k) return 'Nah Son'
+    if (nums.length < k) return []
 
     // find the max num of the initial window
     for (let i = 0; i < k; i++) {
@@ -58,13 +58,8 @@ function sliding(nums, k) {
     // continue until the edge of our window AKA end of our list 
     while(p2 < nums.length) {
 
-
-        console.log('nums[p1]', nums[p1]);
-        console.log('nums[p2]', nums[p2]);
-
-        let testMax = Math.max(...nums.slice(p1, p2 + 1))
-        console.log('testMax', testMax)
-        arr.push(testMax)
+        let max = Math.max(...nums.slice(p1, p2 + 1))
+        arr.push(max)
 
         // slide the window along the list 
         p1++
