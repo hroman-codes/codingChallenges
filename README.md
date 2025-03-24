@@ -30,3 +30,4 @@
 
 ## Tech
 - Javascript
+- Python
