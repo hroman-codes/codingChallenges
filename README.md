@@ -15,19 +15,6 @@
     - [T]est
     - [O]ptimization
 
-## Complexity
-#### ⏲️ ```Time``` ⏲️ (FOCLP)
-- Operations
-- Comparisons
-- Loop stuff
-- Pointer references
-- Function calls to outside
-
-#### 🚀 ```Space``` 🚀 
-- Auxiliary Space
-- Input Size
-- Variables
-
 ## Tech
 - Javascript
 - Python
